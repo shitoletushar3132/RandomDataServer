@@ -1,6 +1,9 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors());
 
 function generateRandomNotes(count = 10) {
   const titles = ["Meeting", "Shopping List", "Idea", "Reminder", "Todo"];
